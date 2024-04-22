@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Open Sans", sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  top: 89px;
+  position: relative;
+}
+
+.card1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid rgba(247, 241, 241, 0.909);
+  margin: 10px 0px;
+  /* position: relative; */
+padding: 10px;
+  top: 50px;
+  height: 433px;
+  width: 298px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px burlywood;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #00aeef;
+  border: 2px solid;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0px 10px;
+  margin-bottom: -8px;
+  color: white;
+}
+
+button:hover {
+  background-color: #0689b8;
+}
+
+.card1 p {
+  font-size: 17px;
+  color: #569219;
+}
+
+.card1 img {
+  width: 181px;
+  height: 192px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 63px;
+  background: white;
+  color: black;
+  position: fixed;
+  z-index: 72;
+  width: 100%;
+  box-shadow: -7px 3px 12px -5px;
+}
+h6{
+    font-size: 15px;
+    /* line-height: 1rem; */
+}
+
+h5 {
+  font-size: 17px;
+  padding: 10px;
+    line-height: 1.4rem;
+
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 24%;
+  cursor: pointer;
+}
+
+.cart i {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart span {
+  position: absolute;
+  left: 16px;
+  bottom: 19px;
+  font-size: 1.3rem;
+  color: black;
+}
+
+
+.cartBox{
+    width: 311px;
+    height: 100%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0px 0px 10px;
+    box-shadow: -1px 1px 5px;
+    right: 0px;
+    position: fixed;
+    z-index: 1; 
+    overflow: auto;
+    top: 64px;
+    display: none;
+}
+
+.show{
+  display: block;
+}
+
+
+.row{
+  /* margin-top: 63px; */
+  font-size: 13px;
+  padding: 13px;
+}
+
