@@ -78,8 +78,9 @@ getData()
             })
 
             let displayPrice = document.createElement('div')
+            displayPrice.classList.add('price')
             displayPrice.innerHTML =
-            `<h3>Your Cart is empty!</h3>
+            `<h3>Total Price :-</h3>
             <h4 id='tp'></h4>`
             cartBox.appendChild(displayPrice)
 
@@ -108,6 +109,7 @@ totalPrice.innerHTML = `${finalPrice}`
             })
 
             let displayPrice = document.createElement('div')
+            displayPrice.classList.add('price')
             displayPrice.innerHTML =
             `<h3>Total price:-</h3>
             <h4 id='tp'></h4>`

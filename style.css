@@ -128,8 +128,13 @@ h5 {
 
 
 .row{
-  /* margin-top: 63px; */
+ margin-bottom: 31px;
   font-size: 13px;
+  padding: 13px;
+}
+
+.price{
+  margin-bottom: 79px;
   padding: 13px;
 }
 
