@@ -34,6 +34,110 @@ getData()
             })
         }
 
+        window.alldata = ()=>{
+            root.innerHTML = ''
+            data.map((item) => {
+                let x ='' 
+                for(let i=1; i<= Math.round(item.rating.rate); i++){
+                  x += '⭐'
+                }  
+                let card = document.createElement('div')
+                card.classList.add('card1')
+                card.innerHTML = ` <img src="${item.image}" alt="">
+                <h2> ${item.title}</h2>
+                <h3>Category:- ${item.category}</h3>
+                <h2>Price:- ₹ ${Math.ceil(item.price) * 10} </h2>
+                <h3>Rating:- ${item.rating.rate} (${x})</h3>
+                <button onclick="addToCart(${item.id})">Add to Cart</button>`
+
+                root.appendChild(card)
+            })
+        }
+
+        window.mens = ()=>{
+            let result = data.filter((item)=> item.category=="men's clothing") 
+            root.innerHTML = ''
+            result.map((item) => {
+                let x ='' 
+                for(let i=1; i<= Math.round(item.rating.rate); i++){
+                  x += '⭐'
+                }  
+                let card = document.createElement('div')
+                card.classList.add('card1')
+                card.innerHTML = ` <img src="${item.image}" alt="">
+                <h2> ${item.title}</h2>
+                <h3>Category:- ${item.category}</h3>
+                <h2>Price:- ₹ ${Math.ceil(item.price) * 10} </h2>
+                <h3>Rating:- ${item.rating.rate} (${x})</h3>
+                <button onclick="addToCart(${item.id})">Add to Cart</button>`
+
+                root.appendChild(card)
+            })
+        }
+
+        window.Womens = ()=>{
+            let result = data.filter((item)=> item.category=="women's clothing") 
+            root.innerHTML = ''
+            result.map((item) => {
+                let x ='' 
+                for(let i=1; i<= Math.round(item.rating.rate); i++){
+                  x += '⭐'
+                }  
+                let card = document.createElement('div')
+                card.classList.add('card1')
+                card.innerHTML = ` <img src="${item.image}" alt="">
+                <h2> ${item.title}</h2>
+                <h3>Category:- ${item.category}</h3>
+                <h2>Price:- ₹ ${Math.ceil(item.price) * 10} </h2>
+                <h3>Rating:- ${item.rating.rate} (${x})</h3>
+                <button onclick="addToCart(${item.id})">Add to Cart</button>`
+
+                root.appendChild(card)
+            })
+        }
+
+        window.elecrtonic = ()=>{
+            let result = data.filter((item)=> item.category=="electronics") 
+            root.innerHTML = ''
+            result.map((item) => {
+                let x ='' 
+                for(let i=1; i<= Math.round(item.rating.rate); i++){
+                  x += '⭐'
+                }  
+                let card = document.createElement('div')
+                card.classList.add('card1')
+                card.innerHTML = ` <img src="${item.image}" alt="">
+                <h2> ${item.title}</h2>
+                <h3>Category:- ${item.category}</h3>
+                <h2>Price:- ₹ ${Math.ceil(item.price) * 10} </h2>
+                <h3>Rating:- ${item.rating.rate} (${x})</h3>
+                <button onclick="addToCart(${item.id})">Add to Cart</button>`
+
+                root.appendChild(card)
+            })
+        }
+         
+        window.jewelry = ()=>{
+            let result = data.filter((item)=> item.category=="jewelery") 
+            root.innerHTML = ''
+            result.map((item) => {
+                let x ='' 
+                for(let i=1; i<= Math.round(item.rating.rate); i++){
+                  x += '⭐'
+                }  
+                let card = document.createElement('div')
+                card.classList.add('card1')
+                card.innerHTML = ` <img src="${item.image}" alt="">
+                <h2> ${item.title}</h2>
+                <h3>Category:- ${item.category}</h3>
+                <h2>Price:- ₹ ${Math.ceil(item.price) * 10} </h2>
+                <h3>Rating:- ${item.rating.rate} (${x})</h3>
+                <button onclick="addToCart(${item.id})">Add to Cart</button>`
+
+                root.appendChild(card)
+            })
+        }
+
         
         window.addToCart= (pId) =>{
          let product = data.find((item)=> pId === item.id)
@@ -136,12 +240,6 @@ btn.addEventListener('click', ()=>{
         flag =0
     }
 })
-
- 
-
-    
-    
-
        
 
     })

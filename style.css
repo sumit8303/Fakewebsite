@@ -83,9 +83,10 @@ h5 {
 .list {
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
-  width: 24%;
+  justify-content: space-between;
+  width: 36%;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .cart i {
